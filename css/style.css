@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*=========================DARK-LIGHT========================*/
+#darkBtn, #lightBtn {
+    max-width: 5rem;
+    border-radius: 3%;
+    background-color: crimson;
+    color: white;
+    font-size: 1.4rem;
+    border: 0.1rem solid black;
+}
+.stilDiv {
+    margin: 0.5rem;
+    padding: 0.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    
+}
+.dark {
+    background-color: rgb(25, 22, 22);
+    color: white;
+}
+
+/*=========================FORM========================*/
+input {
+    font-size: 1.1rem;
+}
+.form_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.1rem;
+}
+.addBtn {
+    width: 6.9rem;
+    border-radius: 10%;
+    background-color: crimson;
+    color: white;
+    font-size: 1.4rem;
+    border: 0.1rem solid black;
+}
+.form {
+    border: 0.0625rem solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 51,25rem;
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.searchDiv {
+    border: 0.0625rem solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 51,25rem;
+    align-items: start;
+    justify-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+/*=========================LIST========================*/
+.mainDiv {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.1rem;
+    border: 0.0625rem solid black;
+    margin: 0.5rem;
+    padding: 0.6rem;
+}
+.personDiv {
+    border-right: 0.0625rem solid black;
+    text-align: center;
+    font-weight: bold;
+}
+.personDiv:last-of-type {
+    border: none;
+}
+.deleteBtn {
+    border-radius: 10%;
+    background-color: crimson;
+    color: white;
+    border: 0.1rem solid black;
+}
+@media all and (max-width: 820px) {
+    .form_div {
+        grid-template-columns: 1fr;
+    }
+    .mainDiv {
+        grid-template-columns: 1fr;
+    }
+    .personDiv {
+        border-bottom: 0.0625rem solid black;
+        border-right: none;
+    }
+    /*
+    .personDiv:last-of-type {
+        border-bottom: 0.0625rem solid black;
+    }
+    .personDiv:nth-of-type(2) {
+        border-right: none;
+    }
+    */
+    .deleteBtn {
+        margin-top: 0.5rem;
+        padding: 0.3rem;
+    }
+}
